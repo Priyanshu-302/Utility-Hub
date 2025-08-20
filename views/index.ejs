@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Utility Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/script.js"></script>
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6"
+  >
+    <h1 class="text-3xl font-bold mb-6">⚡ Utility Hub</h1>
+
+    <!-- QR Code Generator -->
+    <section class="bg-gray-800 p-4 rounded-xl shadow mb-6 w-full max-w-lg">
+      <h2 class="text-xl font-semibold mb-2">📱 QR Code Generator</h2>
+      <input
+        id="qrText"
+        type="text"
+        placeholder="Enter text..."
+        class="w-full p-2 rounded text-black mb-2"
+      />
+      <button onclick="generateQR()" class="bg-blue-500 px-4 py-2 rounded">
+        Generate
+      </button>
+      <div id="qrResult" class="mt-4"></div>
+    </section>
+
+    <!-- PDF Generator -->
+    <section class="bg-gray-800 p-4 rounded-xl shadow mb-6 w-full max-w-lg">
+      <h2 class="text-xl font-semibold mb-2">📄 PDF Generator</h2>
+      <textarea
+        id="pdfInput"
+        class="w-full p-2 rounded text-black mb-2"
+        rows="3"
+      ></textarea>
+      <button onclick="generatePDF()" class="bg-red-500 px-4 py-2 rounded">
+        Download PDF
+      </button>
+    </section>
+
+    <!-- Random Joke -->
+    <section class="bg-gray-800 p-4 rounded-xl shadow mb-6 w-full max-w-lg">
+      <h2 class="text-xl font-semibold mb-2">😂 Random Joke</h2>
+      <button onclick="getJoke()" class="bg-indigo-500 px-4 py-2 rounded">
+        Get Joke
+      </button>
+      <p id="jokeResult" class="mt-2"></p>
+    </section>
+  </body>
+</html>
