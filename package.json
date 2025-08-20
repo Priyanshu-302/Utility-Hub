@@ -3,7 +3,6 @@
     "axios": "^1.11.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "multer": "^2.0.2",
     "pdfkit": "^0.17.1",
     "qrcode": "^1.5.4",
     "sharp": "^0.34.3",
@@ -20,5 +19,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "multer": "^2.0.2"
+  }
 }
